@@ -20,8 +20,11 @@ router.post("/", function (req, res) {
         "burger_name", "devoured"
     ], [
         req.body.burger_name, req.body.devoured
-    ], function () {
+    ], function (result) {
         res.redirect("/");
+        res.json({
+            id: result.insertId
+        });
     });
 });
 
