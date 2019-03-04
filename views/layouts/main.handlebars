@@ -1,14 +1,14 @@
-{{!-- Setup the main.handlebars file so it's able to be used by Handlebars. --}}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Burger App</title>
+
+    <title>Eat Da Burger App</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/css/burger_style.css" type="text/css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstap CSS -->
@@ -18,14 +18,23 @@
         crossorigin="anonymous"></script>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <!-- Javascript -->
-    <script src="/assets/js/burger.js"></script>
+    <script src="/public/assets/js/burger.js"></script>
 </head>
 
 <body>
-    {{{ body }}}
+    <div>
+
+        {{{ body }}}
+
+    </div>
+    <hr>
+    <!-- /container -->
+    <footer class="center footer">
+        <div class="container">
+            <p> copyright © Thomas Headle 2019</p>
+        </div>
+    </footer>
 </body>
 
 </html>
