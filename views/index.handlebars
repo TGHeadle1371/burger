@@ -11,7 +11,7 @@
 
         <div class="form-group">
             <label for="newBurger">Add a burger: </label>
-            <input type="text" id="newburger" name="burger">
+            <input type="text" id="newBurger" name="burger">
             <button type="submit" id="addBurger" class="btn btn-success">Add</button>
         </div>
         &nbsp;
@@ -22,14 +22,14 @@
         <!-- Undevoured Burgers -->
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading m-2" id="lefthead"><strong>New Burgers</strong></div>
+                <div class="panel-heading m-2"><strong>New Burgers</strong></div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}}
                         {{#unless devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                        <button type="button" class="eatburger btn btn-primary" id="eatbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><i class="fa fa-cutlery" aria-hidden="true"></i>
+                        <button type="button" class="eatburger btn btn-primary text-white" id="eatbutton"
+                            data-id="{{this.id}}" data-newDevoured="{{devour}}">Devour
                         </button>
                         <hr>
                         {{/unless}}
@@ -47,8 +47,8 @@
                         {{#each burgers}}
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                        <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        <button type="button" class="trashburger btn btn-danger text-white" id="trashbutton"
+                            data-id="{{this.id}}" data-newDevoured="{{devour}}">Delete</button>
                         <hr>
                         {{/if}}
                         {{/each}}
@@ -57,6 +57,4 @@
             </div>
         </div>
     </div>
-    <button class="devour mt-2" data-id="{{this.id}}" data-devouredState="{{devoured}}">Devour It!</button>
-
 </div><!-- /row -->
