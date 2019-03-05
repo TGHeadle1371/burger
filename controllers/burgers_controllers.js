@@ -14,7 +14,7 @@ router.get("/", function (req, res) {
         res.render("index", hbsObject);
     });
 });
-
+// Create burgers and add to row
 router.post("/api/burgers", function (req, res) {
     burger.create([
         "burger_name", "devoured"
@@ -27,6 +27,7 @@ router.post("/api/burgers", function (req, res) {
     });
 });
 
+// Move burger to devoured
 router.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
 
@@ -35,7 +36,7 @@ router.put("/api/burgers/:id", function (req, res) {
     burger.update({
         devoured: req.body.devoured
     }, condition, function (result) {
-        if (result.changedRows === 0) {
+        if (result.changedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404.
             return res.status(404).end();
         } else {
@@ -46,10 +47,8 @@ router.put("/api/burgers/:id", function (req, res) {
 
 router.delete("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
-    console.log("Condition: " + condition);
-
     burger.delete(condition, function (result) {
-        if (result.changedRows === 0) {
+        if (result.changedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404.
             return res.status(404).end();
         } else {

@@ -40,7 +40,6 @@ $(function () {
     });
 
     $(".trashburger").on("click", function (event) {
-        event.preventDefault();
 
         var id = $(this).data("id");
 
