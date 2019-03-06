@@ -1,11 +1,35 @@
+/* All text white */
 * {
     color: white;
 }
 
-body {
-    background-color: #a24a9c;
+/* H1 Font */
+h1 {
+    font-family: 'Creepster',
+        cursive;
+    font-size: 6em;
+    white-space: nowrap;
+
 }
 
+/* Body color */
+body {
+    background-color: #a24a9c;
+    min-width: 100%;
+}
+
+/* Span text size */
+span {
+    font-size: 1.2rem;
+}
+
+/* Text stay on same line */
+ul {
+    white-space: nowrap;
+}
+
+/* burger button style */
 .eatburger {
-    width: 75%;
+    border-radius: 5px;
+    margin-left: 5px;
 }
