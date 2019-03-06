@@ -12,12 +12,16 @@ h1 {
 
 }
 
+html {
+    min-height: 100vh;
+}
 
 /* Body color */
 body {
     background-color: #BF3E47;
     min-width: 100%;
     margin: 0;
+    max-height: 50vh;
 }
 
 /* Span text size */
@@ -28,6 +32,10 @@ span {
 /* Text stay on same line */
 ul {
     white-space: nowrap;
+}
+
+div .col-md-6 {
+    height: 500px;
 }
 
 /* burger button style */
