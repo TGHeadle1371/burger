@@ -39,14 +39,15 @@ $(function () {
         });
     });
 
-    $(".trashburger").on("click", function (event) {
+    $("#trashbutton").on("click", function (event) {
+        // event.preventDefault();
 
         var id = $(this).data("id");
 
         // Send the DELETE request.
-        $.ajax({
+        $.ajax("/api/burgers/" + id, {
             type: "DELETE",
-            url: "/api/burgers/" + id
+            data: id
         }).then(function () {
             console.log("Devoured Burger deleted!")
             location.reload()
