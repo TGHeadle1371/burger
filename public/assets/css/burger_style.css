@@ -12,10 +12,12 @@ h1 {
 
 }
 
+
 /* Body color */
 body {
-    background-color: #a24a9c;
+    background-color: #BF3E47;
     min-width: 100%;
+    margin: 0;
 }
 
 /* Span text size */
