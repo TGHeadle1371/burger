@@ -1,6 +1,6 @@
 # Eat Da Burger
 
--   [Live Link](https://github.com/TGHeadle1371/burger)
+-   [Live Link](https://powerful-wildwood-83402.herokuapp.com/)
 -   Eat Da Burger is a burger eating app that lets users input the names of burgers they'd like to eat.
 
 -   Whenever a user submits a burger's name, the app will display the burger name on the left side of the page -- waiting to be devoured.
