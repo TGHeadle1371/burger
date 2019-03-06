@@ -9,7 +9,7 @@
 
 -   Your app will store every burger in a database, whether devoured or not.
 
-    -   ![Eat Da Burger](/public/assets/img/mainPage.png)
+    ![Eat Da Burger](/public/assets/img/mainPage.png)
 
 -   Technology used:
 
