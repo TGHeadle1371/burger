@@ -1,5 +1,14 @@
+--Drop the database
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
 
-USE sihkt11kh21sec70;
+USE burgers_db;
 
-    
-SELECT * FROM todos;
+CREATE TABLE burgers
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	burger_name varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	createdAt TIMESTAMP NOT NULL,
+	PRIMARY KEY (id)
+);
